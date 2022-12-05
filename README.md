@@ -1,8 +1,10 @@
 # FrontendDev--BasicCalculator
 
-- Basic calculator with user interface created with Html, css and bootstrap
+- It is an interactive calculator
+- Basic calculator with user interface created with Html, Css and Bootstrap
+- Calculating and display dynamic functionalities are handled by javascript
 - 2 numbers are entered by clicking on number buttons
-- Required transaction is done
+- Requested transaction is done and displayed on result screen
 
 
 ## Technologies
