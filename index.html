@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculater</title>
+    <title>Basic Calculator</title>
+    <!-- External custom CSS link -->
     <link rel="stylesheet" href="Public/css-files/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -16,30 +17,35 @@
                 <div class="row text-black bg-warning text-end pe-5 pt-3" id="border-radius">
                     <p class="" id="resultScreen"></p>
                 </div>
+                <!-- Row of 0, 1, 2, 3 -->
                 <div class="row justify-content-center pt-3">
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="0" onclick="numberHandler(this.id)">0</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="1" onclick="numberHandler(this.id)">1</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="2" onclick="numberHandler(this.id)">2</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="3" onclick="numberHandler(this.id)">3</button></div>
                 </div>
+                <!-- Row of 4, 5, 6, + -->
                 <div class="row justify-content-center pt-3">
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="4" onclick="numberHandler(this.id)">4</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="5"onclick="numberHandler(this.id)">5</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="6" onclick="numberHandler(this.id)">6</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="add" onclick="transactionHandler(this.id)">+</button></div>
                 </div>
+                <!-- Row of 7, 8, 9, - -->
                 <div class="row justify-content-center pt-3">
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="7" onclick="numberHandler(this.id)">7</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="8" onclick="numberHandler(this.id)">8</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-warning btn-lg" id="9" onclick="numberHandler(this.id)">9</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="substract" onclick="transactionHandler(this.id)">-</button></div>
                 </div>
+                <!-- Row of x, /, ^, = -->
                 <div class="row justify-content-center pt-3 pb-3">
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="multiple" onclick="transactionHandler(this.id)">X</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="divide" onclick="transactionHandler(this.id)">/</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="expo" onclick="transactionHandler(this.id)">^</button></div>
                     <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" onclick="calculate()">=</button></div>
                 </div>
+                <!-- Clear button -->
                 <div class="row justify-content-center pt-3 pb-3">
                     <div><button type="button" class="btn btn-primary btn-lg" onclick="resetCalculator()">Clear</button></div>
                 </div>
@@ -48,6 +54,7 @@
     </div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!-- External custom calculator methods js link -->
 <script src="Public/src/caculatorHandler.js"></script>
 </body>
 </html>

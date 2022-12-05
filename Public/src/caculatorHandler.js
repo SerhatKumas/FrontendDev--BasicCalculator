@@ -2,18 +2,20 @@ let firstNumber = 0;
 let secondNumber = 0;
 let transactionType = "";
 
+//Boolean variable to check whether any transaction button is clicked -, + and so on
 let isTransactionTypeAssigned = false;
-let isFirstTransaction = true;
+
+//Boolean variable to check whether = is clicked and result is printed, if so user should clear the calculator
 let isResulted = false;
 
+//Transaction assigner method + - * / ^ 
 function transactionHandler(transaction_id){
-if(!document.getElementById("resultScreen").innerHTML=="" && isFirstTransaction && !isResulted){
+if(!document.getElementById("resultScreen").innerHTML=="" && !isResulted){
     if(!isTransactionTypeAssigned){
         firstNumber = parseInt(document.getElementById("resultScreen").innerHTML);
         transactionType = transaction_id;
         isTransactionTypeAssigned = true;
         document.getElementById("resultScreen").innerHTML="";
-        isFirstTransaction = false;
     }
     else{
         alert("Transaction type is already chosen : "+transactionType);
@@ -24,6 +26,8 @@ else{
 }
 }
 
+//Number printer and assigner method
+//In this calculator, 2 numbers are taken and requested transaction is done
 function numberHandler(button_id){
     if(!isResulted){
     document.getElementById("resultScreen").innerHTML += String(button_id);
@@ -33,6 +37,7 @@ function numberHandler(button_id){
     }
 }
 
+//Reset or clear method for starting over and over to use calculator
 function resetCalculator(){
     firstNumber = 0;
     secondNumber = 0;
@@ -44,6 +49,7 @@ function resetCalculator(){
     document.getElementById("resultScreen").innerHTML = "";
 }
 
+//Transaction handler method with 2 number and transaction type and prints into result screen
 function calculate(){
     if(!document.getElementById("resultScreen").innerHTML=="" && !isResulted){
         secondNumber = parseInt(document.getElementById("resultScreen").innerHTML);
